@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background: rgb(19, 25, 95);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.modal-container{
+    left: 8%;
+    top: 0;
+    box-shadow: 0px 0px 256px 100px black;
+    position: fixed;
+    padding: 30px 20px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 12.613px;
+    background: linear-gradient(105deg, #000548 24.21%, #151C74 88.91%);
+}
+
+
+
+/* HEADER   UUUUUPPPP */
+#header{
+    margin-top: 30px;
+}
+.header-up-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.header-burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.line{
+    border: 1.5px solid white;
+    width: 29px;
+    background: white;
+}
+.line-small{
+    border: 1.5px solid white;
+    width: 20px;
+    background: white;
+}
+.header-left h1{
+    color: #FFF;
+font-size: 22px;
+font-weight: 600;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+.search-icon{
+    color: white;
+    padding: 8px 8px;
+    font-size: 24px;
+    border-radius: 7px;
+    background: #18207C;
+    box-shadow: 3px 3px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.header-right{
+    display: flex;
+    gap: 30px;
+}
+.search ion-icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search input{
+    width: 96px;
+height: 36px;
+flex-shrink: 0;
+border-radius: 7px;
+background: #FFF;
+border: none;
+outline: none;
+padding-left: 10px;
+}
+
+.search input::placeholder{
+    color: #979797;
+font-size: 16px;
+font-weight: 400;
+}
+.quas ion-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* HEADER DOWN */
+
+.header-down-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.header-down-content h1{
+    color: #01064A;
+font-size: 17px;
+font-weight: 300;
+background: white;
+border-radius: 50px;
+padding: 10px 50px;
+cursor: pointer;
+}
+.header-down-content h2{
+    color: #FFF;
+font-size: 17px;
+font-weight: 300;
+border: 1px solid white;
+padding: 10px 50px;
+border-radius: 50px;
+cursor: pointer;
+}
+
+hr{
+    margin: 60px 0px 80px 0px;
+}
+
+
+/* SECTION  -----------------*/
+
+.img-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.info-card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    border: 1px solid white;
+    width: 180px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.card-txt h2{
+    color: #FFF;
+    font-size: 18.568px;
+    font-weight: 600;
+}
+.card-txt p{
+    color: #959595;
+font-size: 12px;
+font-weight: 500;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 70px;
+}
+.info-card h3{
+    color: #FFF;
+font-size: 23px;
+font-weight: 600;
+}
+.info-card button{
+    cursor: pointer;
+    display: flex;
+width: 107.692px;
+height: 32.493px;
+padding: 8.355px 38.064px;
+gap: 9.284px;
+border-radius: 4.642px;
+border: 0.928px solid #BDBDBD;
+background: none;
+color: #FFF;
+font-size: 12.997px;
+font-weight: 400;
+}
+.hero h1{
+    color: #FFF;
+font-size: 26px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+
+
+
+
+/* BURGER ____________________ */
+#modal-burger{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    background: rgba(128, 128, 128, 0);
+    width: 100%;
+    height: 100%;
+}
+.modal-burger{
+    background: linear-gradient(105deg, #000548 24.21%, #151C74 88.91%);
+    width: 237px;
+    padding: 20px;
+    
+}
+.burger-nav{
+    display: flex;
+    gap: 90px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.itself-nav{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    cursor: pointer;
+}
+.itself-nav h2{
+    color: #FFF;
+font-size: 16px;
+font-weight: 500;
+}
+.burger-content h1{
+    color: #ffffff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 50px;
+text-align: center;
+}
+.burger-content span{
+    color: #2CC77B;
+    margin-bottom: 10px;
+}
+.logout h2{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+/* CIRCLES                */
+.red{
+    width: 10px;
+height: 10.29px;
+background: red;
+border-radius: 50%;
+}
+.yellow{
+    width: 10px;
+height: 10.29px;
+background: yellow;
+border-radius: 50%;
+}
+.green{
+    width: 10px;
+height: 10.29px;
+background: green;
+border-radius: 50%;
+}
+.blue{
+    width: 10px;
+height: 10.29px;
+background: blue;
+border-radius: 50%;
+}
+.circles{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.close-content{
+    background: white;
+    font-size: 50px;
+    padding: 10px 10px 0px 5px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+
+/* MODAL ++++++++++++++++++++++ */
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.modal-header-left{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.modal-header-left-txt h2{
+    color: #FFF;
+font-size: 17.135px;
+font-weight: 600;
+}
+.modal-header-left-txt h1{
+    color: #FFF;
+font-size: 31.111px;
+font-weight: 700;
+}
+.modal-header-btn{
+    display: flex;
+    position: relative;
+}
+.modal-header-btn button{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.modal-header-btn ion-icon{
+    position: absolute;
+    left: 66%;
+    top: 5px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+.modal-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-info{
+    border: 1px solid white;
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+.section-info h3{
+    color: #FFF;
+font-size: 17.453px;
+font-weight: 600;
+margin: 10px 0px;
+}
+.price h5{
+    color: #2CC77B;
+font-size: 13.453px;
+font-weight: 700;
+margin-right: 10px;
+}
+.price h4{
+    color: #FFF;
+font-size: 13.453px;
+font-weight: 700;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 27px;
+}
+.info h1{
+    color: #F1F1F1;
+font-size: 12.772px;
+font-weight: 500;
+}
+.info span{
+    color: #2CC77B;
+font-size: 12.772px;
+font-weight: 700;
+}
+.section-info p{
+    color: #A0A0A0;
+font-size: 10.09px;
+font-weight: 500;
+margin: 10px 0px;
+}
+
+
+/* FOOOOTER                 */
+#modal{
+    display: none;
+}
+.left-footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select button{
+    cursor: pointer;
+    border: none;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.select ion-icon{
+    color: white;
+    font-size: 20px;
+}
+.green-btn button{
+    background: #2CC77B;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px 0px 30px 0px;
+}
+.rg-btn{
+    color: white;
+    background: red;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
